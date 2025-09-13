@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Cossette+Titre:wght@400;700&family=Epunda+Sans:ital,wght@0,300..900;1,300..900&family=IM+Fell+DW+Pica:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mountains+of+Christmas:wght@400;700&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+NKo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
     <title>Slot Machine</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Other Slot Machine</h1>
+    <h1>Other Mother's Slot Machine</h1>
     <img src="img/background.jpg">
     <p>How to Use:</p>
     <ol>
@@ -17,5 +21,18 @@
         <li>If you bid 50 buttons and win, you get 100x more buttons</li>
     </ol>
 
+    <div class="slots">
+        <div class="slot1" id="slot1"></div>
+        <div class="slot2" id="slot2"></div>
+        <div class="slot3" id="slot3"></div>
+    </div>
+    <p>Buttons Collected :<span id="wallet"></span></p>
+    <div>
+        <button class="min" id="min">Place Min Bet 5 Buttons</button>
+        <button class="max" id="max">Place Max Bet 50 Buttons</button>
+        <button id="spinButton">Spin!</button>
+    </div>
+    <section class="result" id="result"></section>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
