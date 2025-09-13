@@ -11,27 +11,29 @@
 </head>
 <body>
     <main>
-    <h1>Other Mother's Slot Machine</h1>
-    <img class="background" src="img/background.jpg">
+    <h1><img src="css/key.png" width="100px"> Other Mother's Slot Machine <img src="css/key1.png" width="100px"></h1>
+    <div class="content">
+    <img class="background" src="css/background.png" style="display: none;">
     <p>How to Use:</p>
     <ol>
         <li>You start off with 1000 button eyes</li>
-        <li>You can bid either 5 or 50 buttons</li>
-        <li>Each time you get 3 ghost children's eyes in a row you win!</li>
-        <li>If you bid 5 buttons and win, you get 10x more buttons</li>
-        <li>If you bid 50 buttons and win, you get 100x more buttons</li>
+        <li>You can bid either 5 or 50 buttons; choose one, then spin!</li>
+        <span>(You can change your bidding mid game - if your feeling lucky!)</span>
+        <li>Get 3  of the same ghost children's eyes in a row you win!</li>
+        <li>If you win, you get 5x more buttons</li>
     </ol>
 
-    <div class="slots">
+    <div id="slots" class="slots">
         <div class="slot1" id="slot1"></div>
         <div class="slot2" id="slot2"></div>
         <div class="slot3" id="slot3"></div>
     </div>
-    <p>Buttons Collected :<span id="wallet"></span></p>
-    <div>
-        <button class="min" id="min">Place Min Bet 5 Buttons</button>
-        <button class="max" id="max">Place Max Bet 50 Buttons</button>
+    <p class="wallet">Buttons Collected :<span id="wallet"></span></p>
+    <div class="bottomOfPage">
+        <button class="min" id="min">Min Bet 5 Buttons</button>
+        <button class="max" id="max">Max Bet 50 Buttons</button>
         <button id="spinButton">Spin!</button>
+    </div>
     </div>
     <section class="result" id="result"></section>
     <script type="text/javascript" src="js/main.js"></script>

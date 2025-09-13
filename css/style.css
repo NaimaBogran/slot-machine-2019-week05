@@ -4,7 +4,76 @@
 h1{
     text-align: center;
     font-family:'Mountains of Christmas' ,'Courier New', Courier, monospace;
+    font-size: 80px;
+    color: black;
+    background: url(titleWallpaper.png);
+    height: 100px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+h1 img{
+    padding: 10px;
+}
+body{
+    background: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 main{
-    background-image: url("img/background.png");
+    font-weight: 600;
+    color: white;
+    font-family:'Mountains of Christmas' ,'Courier New', Courier, monospace;
+}
+p{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.slots{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    gap: 20px;
+    background: url(titleWallpaper.png) hidden;
+    padding: 50px;
+    margin-right: 600px;
+    margin-left: 500px;
+    margin-top: -120px;
+}
+.slots div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slots img{
+    width: 120px;
+    padding: 20px;
+}
+.slot2{
+    border-right: solid 5px black;
+    border-left: solid 5px black;
+
+}
+.bottomOfPage, .wallet, .result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+.result{
+    font-size: 30px;
+    margin-top: 30px;
+}
+button{
+    color: rgb(231, 218, 138);
+    background: url(spiderweb.png);
+    border: white solid 1px;
+    margin: 5px;
+    padding: 2px;
+    height: 30px;
+    width: 150px;
+    font-family:'Mountains of Christmas' ,'Courier New', Courier, monospace;
+    font-weight: 900;
 }

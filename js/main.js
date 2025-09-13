@@ -8,6 +8,7 @@ document.querySelector('#max').addEventListener('click', spinMax);
 document.querySelector('#spinButton').addEventListener('click', spinSlots)
 document.querySelector('#wallet').innerHTML = wallet;
 
+
 function spinMin() {
     if (wallet >= minBet){
         wallet -= minBet;
@@ -42,6 +43,9 @@ function spinSlots() {
     let slot2 = getRandomImages();
     let slot3 = getRandomImages();
 
+    document.getElementById("spinButton").addEventListener('click', function() {
+        document.getElementById("slots").style.background = "url('css/titleWallpaper.png')";
+    });
     document.getElementById('slot1').innerHTML = `<img src='${slot1}'>`
     document.getElementById('slot2').innerHTML = `<img src='${slot2}'>`
     document.getElementById('slot3').innerHTML = `<img src='${slot3}'>`
@@ -51,7 +55,7 @@ function spinSlots() {
 
 function checkWin (slot1, slot2, slot3) {
    if (slot1 === slot2 && slot2 === slot3) {
-    wallet += 50;
+    wallet *= 5;
     displayCompleteMessage ("You've escaped the Beldam!!")
    } else {
     wallet -= 5;
