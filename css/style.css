@@ -41,7 +41,7 @@ p{
     margin-right: 600px;
     margin-left: 500px;
     margin-top: -120px;
-}
+ } /*the css for the slots was taken from past projects */
 .slots div{
     display: flex;
     align-items: center;

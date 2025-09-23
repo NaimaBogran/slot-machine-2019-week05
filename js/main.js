@@ -22,7 +22,7 @@ function spinMax() {
     }
 }
 
-function getRandomImages() {
+function getRandomImages() { //the code from here down came from a mix of stackoverflow, mdn, chatgpt and past projects
     let randomNum = Math.floor(Math.random() * 5) + 1;
     let imagePath = '';
 
